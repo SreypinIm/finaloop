@@ -1,4 +1,4 @@
-class ShoppingCart:
+class ShoppingCart1:
     def __init__(self, item, cart_name, cart_price):
         self.item = item
         self.cart_name = cart_name
@@ -8,7 +8,7 @@ class ShoppingCart:
         return f"\n{self.cart_name}:\nItem: {self.item}\nTotal Price: ${self.cart_price:.2f}\n"
 
     def __add__(self, other):
-        return ShoppingCart(self.item + " and "+ other.item, self.cart_name + " and " + other.cart_name, self.cart_price + other.cart_price)
+        return ShoppingCart1(self.item + " and "+ other.item, self.cart_name + " and " + other.cart_name, self.cart_price + other.cart_price)
 
     def __eq__(self, other):
         if self.item == other.item:
@@ -20,8 +20,8 @@ class ShoppingCart:
         print(f"{self.cart_name} was deleted.")
 
 
-cart1 = ShoppingCart("Apple", "Cart1", 10.0)
-cart2 = ShoppingCart("Banana", "Cart2", 15.0)
+cart1 = ShoppingCart1("Apple", "Cart1", 10.0)
+cart2 = ShoppingCart1("Banana", "Cart2", 15.0)
 # cart3 = ShoppingCart("longan", "Cart3", 9.0)
 
 print(cart1)
@@ -35,3 +35,4 @@ del cart2
 
 
 #hi i am sana i am 2years old i have 2 teeth.
+#hiihgfgit pull 

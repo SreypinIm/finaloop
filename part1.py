@@ -30,8 +30,8 @@ print(cart1 == cart2)
 print(cart1 + cart2)
 del cart1
 
-
-
 #let do another one okkkkk
-
 del cart2
+
+
+#hi i am sana i am 2years old i have 2 teeth.
